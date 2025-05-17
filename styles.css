@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Figtree;
+}
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Yellow);
+    min-height: 100vh;
+    min-width: 100vw;
+   
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 383px;
+    border: 1px solid var(--Gray950);
+    background-color: var(--White);
+    box-shadow: 0.5rem 0.5rem var(--Gray950);
+    border-radius: 1rem;
+    gap: 1.2rem;
+
+    
+}
+.main-image{
+    margin-top: 1.5rem;
+    border-radius: 0.625rem;
+    width: 88%;
+}
+.learning-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 88%;
+}
+.learning-title{
+    background-color: var(--Yellow);
+    width: 5.125rem;
+    text-align: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 0.4rem 0 0.4rem 0;
+    border-radius: 0.3rem;
+}
+.publishing-date{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.foundations-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 88%;
+}
+.foundations-header{
+    font-size: 1.5rem;
+}
+.foundations-description{
+    color: hsl(0, 0%, 42%);
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.blogger-section{
+   width: 88%;
+   display: flex;
+   align-items: center;
+   gap: 0.8rem;
+   padding-bottom: 1.5rem;
+}
+.blogger-avatar{
+    width: 2rem;
+}
+.blogger-name{
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 375px){
+   
+.main-container{
+    width: 325px;
+}
+
+.main-image{
+    height: 200px;
+    object-fit: cover;
+}
+
+.learning-title{
+    font-size: 0.75rem;
+    font-weight: 900;
+    width: 4.5rem;
+    
+}
+
+.publishing-date{
+    font-size: 0.75rem;
+}
+
+.foundations-header{
+    font-size: 1.2rem;
+}
+
+.foundations-description{
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+}
+}
